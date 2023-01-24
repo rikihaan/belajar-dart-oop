@@ -1,4 +1,3 @@
-
 /**
  * Tidak hanya untuk mengakses method atau field yang ada di parent class, kata kunci super juga bisa digunakan untuk mengakses constructor
  * Namun syaratnya untuk mengakses parent class constructor, kita harus mengaksesnya di dalam class child constructor
@@ -11,21 +10,20 @@ class Manager {
     this.name = name;
   }
 
- void sayHello(String name){
-  print('Heloo $name my name is ${this.name}');
-  
- }
-
+  void sayHello(String name) {
+    print('Heloo $name my name is ${this.name}');
+  }
 }
 
-class VicePresident extends Manager{
-
+class VicePresident extends Manager {
   // constructor child
-  VicePresident(String name): super(name);
-
+  VicePresident(String name) : super(name);
 }
 
-void main(){
-  VicePresident vicePresident =VicePresident("dandang");
+void main() {
+  VicePresident vicePresident = VicePresident("dandang");
   vicePresident.sayHello("budi");
+
+  VicePresident vicePresident2 = VicePresident("Nurjanah");
+  vicePresident2.sayHello("Suryana");
 }

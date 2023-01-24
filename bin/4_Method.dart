@@ -1,5 +1,3 @@
-import 'package:test/expect.dart';
-
 /***
  * METHOD
  * Selain menambahkan field, kita juga bisa menambahkan mehod ke object
@@ -22,7 +20,7 @@ class Person {
   String getName() {
     return 'Hello $name';
   }
-} 
+}
 
 void main() {
   // memanggil method
